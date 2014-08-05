@@ -1,14 +1,9 @@
-# Wrapper for [Antigate][1] API
-Gem recognizes CAPTCHA by means Antigate.
-
-[Registration Antigate account][2]
-
-## Install
-    gem install antigate
+# Wrapper for [captchabot][1] API
+Cloned from [Antigate][2] GEM
 
 ## Usage
 ### Recognize captcha
-    captcha = Antigate.wrapper(KEY)
+    captcha = Captchabot.wrapper(KEY)
     captcha.phrase = 0 or 1 (0 default, 1 marks that at captcha 2-4 words)
     captcha.regsense = 0 or 1 (0 default, 1 marks that text captcha is case sensitive)
     captcha.numeric = 0 or 1 or 2 (0 default, 1 marks that text captcha consists only of numbers, 2 marks that on captcha no digit)
@@ -20,16 +15,16 @@ Gem recognizes CAPTCHA by means Antigate.
     puts recognized[1] # Text CAPTCHA
 
 #### Example
-    captcha = Antigate.wrapper('660aaf58948bae3fa81362ef71b9ebcc')
+    captcha = Captchabot.wrapper('660aaf58948bae3fa81362ef71b9ebcc')
     captcha.phrase = 1
     recognized = captcha.recognize('http://www.google.com/recaptcha/api/image?c=03AHJ_Vuu-Kun_wMo4M8JiWA87K6awfoiUxJCUF9KkQq3tCfyxjYELhHcsIJrcJ_qgqIQQsBw5vWAkpHBqP4VEHv1nwtoAnD5uZvwzHknOFyID4OrX0_6q8QXQ5TwkRn7qBxdt3QdX6D8NvPcFHFHzmEhu1yCJJQfTwQ', 'jpg')
     puts recognized[1]
 
 ### Get balance
-    puts Antigate.balance(KEY)
+    puts Captchabot.balance(KEY)
 
 #### Example
-    puts Antigate.balance('660aaf58948bae3fa81362ef71b9ebcc')
+    puts Captchabot.balance('660aaf58948bae3fa81362ef71b9ebcc')
 
-[1]: http://antigate.com/
-[2]: http://antigate.com/index.php?action=regscreen
+[1]: http://captchabot.com/
+[2]: https://github.com/ivanare/antigate
