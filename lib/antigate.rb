@@ -26,7 +26,7 @@ module Antigate
   		@calc = 0
   		@min_len = 0
   		@max_len = 0
-  		@domain = "antigate.com"
+  		@domain = "captchabot.com"
   	end
 
   	def recognize(url, ext)
