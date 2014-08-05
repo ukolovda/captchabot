@@ -23,6 +23,10 @@ Cloned from [Antigate][2] GEM
 ### Get balance
     puts Captchabot.balance(KEY)
 
+### Mark as bad
+    captcha = Captchabot.wrapper('660aaf58948bae3fa81362ef71b9ebcc')
+    captcha.bad 'ID recognized CAPTCHA'
+
 #### Example
     puts Captchabot.balance('660aaf58948bae3fa81362ef71b9ebcc')
 
