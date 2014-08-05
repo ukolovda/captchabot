@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.name        = "captchabot"
   s.version     = Captchabot::VERSION
   s.authors     = ["Dmitry Ukolov"]
-  s.email       = ["da.ukolov@gmail.com"]
+  s.email       = ["udmitry@mail.ru"]
   s.homepage    = "https://github.com/ukolovda/captchabot"
   s.summary     = %q{Captchabot wrapper}
   s.description = %q{Wrapper for Captchabot.com}
