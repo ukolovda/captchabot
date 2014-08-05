@@ -1,6 +1,6 @@
-require "antigate/version"
+require "captchabot/version"
 
-module Antigate
+module Captchabot
   require 'net/http'
   require 'uri'
   require 'base64'

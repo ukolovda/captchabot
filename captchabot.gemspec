@@ -1,17 +1,17 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "antigate/version"
+require "captchabot/version"
 
 Gem::Specification.new do |s|
-  s.name        = "antigate"
-  s.version     = Antigate::VERSION
-  s.authors     = ["Ivan Aryutkin"]
-  s.email       = ["iivanare@gmail.com"]
-  s.homepage    = "https://github.com/ivanare/antigate"
-  s.summary     = %q{Antigate wrapper}
-  s.description = %q{Wrapper for Antigate API}
+  s.name        = "captchabot"
+  s.version     = Captchabot::VERSION
+  s.authors     = ["Dmitry Ukolov"]
+  s.email       = ["da.ukolov@gmail.com"]
+  s.homepage    = "https://github.com/ukolovda/captchabot"
+  s.summary     = %q{Captchabot wrapper}
+  s.description = %q{Wrapper for Captchabot.com}
 
-  s.rubyforge_project = "antigate"
+  s.rubyforge_project = "captchabot"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
